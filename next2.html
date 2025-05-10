@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me - Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #c3cfe2 0%, #f5f7fa 100%);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      text-align: center;
+      padding: 60px 20px;
+      clip-path: ellipse(75% 100% at 50% 0%);
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 48px;
+      margin: 0;
+      color: white;
+    }
+
+    .contact-form {
+      background: white;
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #ff758c;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea {
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+      font-family: inherit;
+    }
+
+    button {
+      background: #ff758c;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #e94e77;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fcb69f;
+      color: white;
+      clip-path: ellipse(75% 100% at 50% 100%);
+    }
+
+    a {
+      color: #f67280;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <p><a href="index.html">← Back to Home</a></p>
+  </header>
+
+  <div class="contact-form">
+    <h2>Let’s Create Something Together</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+<nav>
+  <a href="index.html">Home</a> | 
+  <a href="gallery.html">Gallery</a> | 
+  <a href="contact.html">Contact</a>
+</nav>
+
+  <footer>
+    <p>&copy; 2025 Your Name – Reach out anytime 💌</p>
+  </footer>
+</body>
+</html>

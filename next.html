@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #fcb69f, #ffecd2);
+      text-align: center;
+      padding: 60px 20px;
+      clip-path: ellipse(75% 100% at 50% 0%);
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 48px;
+      margin: 0;
+      color: #fff;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .item {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .item:hover {
+      transform: scale(1.03);
+    }
+
+    .item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .item p {
+      padding: 15px;
+      margin: 0;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f67280;
+      color: white;
+      clip-path: ellipse(75% 100% at 50% 100%);
+    }
+
+    a {
+      color: #f67280;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Gallery</h1>
+    <p><a href="index.html">← Back to Home</a></p>
+  </header>
+
+  <div class="gallery">
+    <div class="item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV0cUNF8IZ16apL-8znlmGQKnyc-Db8QylWA&s alt="Artwork 1">
+      <p>Digital Sunset</p>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/400x300.png?text=Artwork+2" alt="Artwork 2">
+      <p>Dreamscape</p>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/400x300.png?text=Artwork+3" alt="Artwork 3">
+      <p>Colorstorm</p>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/400x300.png?text=Artwork+4" alt="Artwork 4">
+      <p>Neon Bloom</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Your Name – Art with Heart</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog - Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      text-align: center;
+      padding: 60px 20px;
+      clip-path: ellipse(75% 100% at 50% 0%);
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 48px;
+      margin: 0;
+      color: #fff;
+    }
+
+    .blog-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .post {
+      background: white;
+      margin-bottom: 30px;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+    }
+
+    .post h2 {
+      color: #f67280;
+      margin-top: 0;
+    }
+
+    .post p {
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f67280;
+      color: white;
+      clip-path: ellipse(75% 100% at 50% 100%);
+    }
+
+    a {
+      color: #f67280;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <p><a href="index.html">← Back to Home</a></p>
+  </header>
+
+  <div class="blog-container">
+    <div class="post">
+      <h2>🎨 Behind the Canvas</h2>
+      <p>I recently started a new digital painting series inspired by city lights and nighttime moods. Here's how I'm combining color theory and rhythm in my brushwork.</p>
+    </div>
+
+    <div class="post">
+      <h2>🧠 Code as Art</h2>
+      <p>Why I think creative coding is more than programming — it’s a new art form. I share my journey using p5.js and CSS animations to build interactive visuals.</p>
+    </div>
+
+    <div class="post">
+      <h2>🌈 Designing with Emotion</h2>
+      <p>Colors tell stories. In this post, I explore how I use gradients and palettes to express mood and guide user experience across my website and digital art.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Your Name – Keep creating 💡</p>
+  </footer>
+</body>
+</html>

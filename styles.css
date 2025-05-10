@@ -1,0 +1,161 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #fdfbfb, #ebedee);
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive;
+  color: #6c5ce7;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Header */
+header {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #fcb69f, #ffecd2);
+  color: white;
+  clip-path: ellipse(75% 100% at 50% 0%);
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  background-color: #f67280;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections & Layout */
+section, .content, .container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Buttons */
+a.button, button {
+  background: #6c5ce7;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+a.button:hover, button:hover {
+  background: #f67280;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #6c5ce7;
+  color: white;
+  clip-path: ellipse(75% 100% at 50% 100%);
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .container, .content, section {
+    margin: 20px;
+  }
+}
+
+/* Bubble animations (from script.js) */
+.bubble {
+  position: fixed;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: rise linear forwards;
+  z-index: 999;
+}
+
+@keyframes rise {
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+/* Dark mode (if toggled) */
+body.dark-mode {
+  background: #1c1c1c;
+  color: #eee;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background: #333;
+  color: #eee;
+}

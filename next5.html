@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creative Experiments - Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      text-align: center;
+      padding: 60px 20px;
+      clip-path: ellipse(75% 100% at 50% 0%);
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 48px;
+      margin: 0;
+      color: white;
+    }
+
+    .experiments-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .experiment {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .experiment:hover {
+      transform: translateY(-5px);
+    }
+
+    .experiment iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .experiment h2 {
+      color: #6c5ce7;
+      margin: 0;
+    }
+
+    .experiment p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f67280;
+      color: white;
+      clip-path: ellipse(75% 100% at 50% 100%);
+    }
+
+    a {
+      color: #f67280;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Creative Experiments</h1>
+    <p><a href="index.html">← Back to Home</a></p>
+  </header>
+
+  <div class="experiments-container">
+    <div class="experiment">
+      <iframe src="https://editor.p5js.org/embed/HyMRCOAQx"></iframe>
+      <h2>Flow Field</h2>
+      <p>Generative art using p5.js – swirling lines based on vector fields.</p>
+    </div>
+    <div class="experiment">
+      <iframe src="https://editor.p5js.org/embed/B1o7sOaQx"></iframe>
+      <h2>Mouse Paint</h2>
+      <p>Interactive painting with your mouse using simple code and color randomness.</p>
+    </div>
+    <div class="experiment">
+      <iframe src="https://editor.p5js.org/embed/rJf3BdYmZ"></iframe>
+      <h2>Color Loops</h2>
+      <p>A colorful looping animation with shapes fading in and out.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Your Name – Playing with pixels ✨</p>
+  </footer>
+</body>
+</html>
